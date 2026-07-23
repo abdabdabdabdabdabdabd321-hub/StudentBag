@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#070D28">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layoutDirection="rtl">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp"/>
+
+        <!-- العنوان -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="المواد الدراسية"
+            android:textColor="#52C8FF"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:shadowColor="#39B5FF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="18"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp"/>
+
+        <!-- البطاقة الرئيسية -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#161D33">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="إضافة مادة جديدة"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="22sp"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"/>
+
+                <EditText
+                    android:id="@+id/editSubjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="اكتب اسم المادة"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#93A7D8"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:backgroundTint="#4FC3FF"
+                    android:inputType="text"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="4dp"
+                    android:text="حفظ المادة"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2F80ED"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"/>
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="⬅ رجوع"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#3949AB"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+        <!-- عنوان المواد -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المواد المسجلة"
+            android:textColor="#52C8FF"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:shadowColor="#39B5FF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#161D33">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSubjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:clipToPadding="false"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

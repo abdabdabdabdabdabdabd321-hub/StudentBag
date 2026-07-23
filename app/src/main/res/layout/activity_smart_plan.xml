@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#0C121A"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="14dp">
+
+    <!-- زر تحديث -->
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="تحديث"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#1B232E"
+        android:elevation="7dp"
+        android:stateListAnimator="@null"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <!-- منطقة الجدول -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="#EAF0F6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EAF0F6">
+
+            <!-- رأس الجدول -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#26384B">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="م"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:includeFontPadding="false"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#7890A7"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="العمل"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#7890A7"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="التاريخ"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:includeFontPadding="false"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#7890A7"/>
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:text="الوقت"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:includeFontPadding="false"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#7890A7"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="تأكيد الإنجاز"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFD65A"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
+
+            </LinearLayout>
+
+            <!-- خط أسفل رأس الجدول -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#5E7892"/>
+
+            <!-- عناصر جدول الأعمال -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EAF0F6"
+                android:clipToPadding="false"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:scrollbars="vertical"
+                android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <!-- زر تقييم الأداء -->
+
+    <Button
+        android:id="@+id/btnEvaluation"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="تقييم الأداء"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#174A91"
+        android:elevation="9dp"
+        android:stateListAnimator="@null"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#090D18">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:padding="18dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+
+        <Button
+            android:id="@+id/btnFreeSummary"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="تلخيص مجاني"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+
+        <Button
+            android:id="@+id/btnProSummary"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="تلخيص ذكي (PRO)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+
+        <!-- لا نضع لوناً ثابتاً حتى لا يتعارض مع كود تغيير حالة الاشتراك -->
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="شراء الاشتراك"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+
+        <Button
+            android:id="@+id/btnShareSummary"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="مشاركة الملخص"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:background="@drawable/button_rounded"
+            android:enabled="false"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#0B1428">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:background="#0B1428"
+                android:padding="18dp">
+
+                <TextView
+                    android:id="@+id/txtSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="420dp"
+                    android:text="الملخص سيظهر هنا..."
+                    android:textColor="#EAF4FF"
+                    android:textSize="17sp"
+                    android:lineSpacingExtra="8dp"
+                    android:textIsSelectable="true"
+                    android:gravity="top|start"
+                    android:shadowColor="#4FC3FF"
+                    android:shadowRadius="3"
+                    android:shadowDx="0"
+                    android:shadowDy="0"/>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

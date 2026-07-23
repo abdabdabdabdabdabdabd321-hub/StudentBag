@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="22dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="#161D33">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <!-- أيقونة المجلد -->
+
+        <FrameLayout
+            android:id="@+id/folderCircle"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:background="#203B74">
+
+            <ImageView
+                android:id="@+id/iconFolder"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_folder_24"
+                app:tint="#52C8FF"/>
+
+        </FrameLayout>
+
+        <!-- اسم المادة -->
+
+        <TextView
+            android:id="@+id/textSubjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/folderCircle"
+            android:layout_marginEnd="18dp"
+            android:text="اسم المادة"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <!-- زر الحذف -->
+
+        <FrameLayout
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="#3A2030">
+
+            <ImageView
+                android:id="@+id/iconDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="#FF5A7A"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

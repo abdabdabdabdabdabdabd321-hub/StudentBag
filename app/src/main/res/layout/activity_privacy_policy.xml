@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#070D28">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- مساحة علوية -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <!-- زر الرجوع -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="⬅ رجوع"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_rounded"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- العنوان -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🔒 سياسة الخصوصية"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#52C8FF"
+            android:shadowColor="#39B5FF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="18"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp"/>
+
+        <!-- بطاقة المقدمة -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            app:cardBackgroundColor="#161D33"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎓 حقيبة الطالب"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#39B5FF"
+                    android:shadowRadius="10"
+                    android:shadowDx="0"
+                    android:shadowDy="0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="نلتزم بحماية خصوصية بيانات المستخدم وتوفير تجربة استخدام آمنة وموثوقة داخل التطبيق."
+                    android:textColor="#D7DFF8"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- بطاقة البيانات -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            app:cardBackgroundColor="#161D33"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📂 البيانات التي نجمعها"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="• البريد الإلكتروني المستخدم لتسجيل الدخول.
+
+• الملفات التي يختارها المستخدم للتلخيص.
+
+• الصور والملاحظات التي يضيفها داخل التطبيق."
+                    android:textColor="#D7DFF8"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- بطاقة الذكاء الاصطناعي -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            app:cardBackgroundColor="#161D33"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🤖 استخدام الذكاء الاصطناعي"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="تُرسل النصوص أو الصور التي يختارها المستخدم بشكل آمن إلى خدمة الذكاء الاصطناعي لإنشاء الملخص فقط، ولا تُستخدم لأي أغراض أخرى."
+                    android:textColor="#D7DFF8"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- بطاقة حماية البيانات -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            app:cardBackgroundColor="#161D33"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛡 حماية البيانات"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="• يتم نقل البيانات عبر اتصال آمن.
+
+• لا يتم مشاركة بيانات المستخدم مع أي جهة خارجية.
+
+• يحتفظ المستخدم بملكيته الكاملة لملفاته وبياناته."
+                    android:textColor="#D7DFF8"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- بطاقة معلومات إضافية -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#161D33"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ معلومات إضافية"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#39B5FF"
+                    android:shadowRadius="8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="تطبيق حقيبة الطالب هو مشروع تخرج جامعي يهدف إلى مساعدة الطلاب في تنظيم دراستهم وإنشاء ملخصات ذكية باستخدام تقنيات الذكاء الاصطناعي، مع الحفاظ على خصوصية بيانات المستخدم وأمانها."
+                    android:textColor="#D7DFF8"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="#33405E"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 1.0"
+                    android:textStyle="bold"
+                    android:textColor="#52C8FF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="© 2026 Student Bag"
+                    android:textColor="#9EA9C8"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

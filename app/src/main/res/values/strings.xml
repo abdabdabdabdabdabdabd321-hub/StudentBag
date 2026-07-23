@@ -1,0 +1,7 @@
+<resources>
+    <string
+        name="app_name">StudentBag</string>
+    <string name="default_web_client_id">
+        ضع هنا Web Client ID الخاص بالمشروع
+    </string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- عنوان البداية -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حدد بداية الوقت"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- عجلة البداية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:layout_marginBottom="15dp">
+
+        <NumberPicker
+            android:id="@+id/startHourPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"/>
+
+        <NumberPicker
+            android:id="@+id/startMinutePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"/>
+
+    </LinearLayout>
+
+    <!-- عنوان النهاية -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حدد وقت النهاية"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- عجلة النهاية -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:layout_marginBottom="15dp">
+
+        <NumberPicker
+            android:id="@+id/endHourPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"/>
+
+        <NumberPicker
+            android:id="@+id/endMinutePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"/>
+
+    </LinearLayout>
+
+    <!-- زر -->
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="حفظ"/>
+
+</LinearLayout>

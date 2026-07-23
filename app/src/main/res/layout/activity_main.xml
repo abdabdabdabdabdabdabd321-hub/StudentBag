@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_main_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- زر الإعدادات -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:src="@drawable/ic_settings"
+                app:tint="#FFFFFF"
+                android:contentDescription="الإعدادات"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+
+        <!-- شعار التطبيق -->
+
+        <FrameLayout
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_logo_circle">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/studentbag_logo"
+                android:scaleType="centerCrop"
+                android:contentDescription="شعار تطبيق حقيبة الطالب"/>
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="StudentBag"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#4FC3FF"
+            android:shadowRadius="12"
+            android:shadowDx="0"
+            android:shadowDy="0"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="2dp"
+                android:background="#32D6FF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Smart Study Assistant  "
+                android:textColor="#E8E8E8"
+                android:textSize="16sp"
+                android:shadowColor="#4FC3FF"
+                android:shadowRadius="12"
+                android:shadowDx="0"
+                android:shadowDy="0"/>
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="2dp"
+                android:background="#32D6FF"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+        <!-- زر اختيار المدة -->
+
+        <Button
+            android:id="@+id/btnSelectDuration"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:text="📅   اختر مدة المخطط الدراسي"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2F80ED"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+
+        <!-- بطاقة المواد -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginBottom="22dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_green"
+                android:padding="24dp">
+
+                <!-- الدائرة البيضاء -->
+
+                <FrameLayout
+                    android:id="@+id/circleSubjects"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bg_logo_circle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="📚"
+                        android:textSize="34sp"/>
+
+                </FrameLayout>
+
+                <!-- العنوان -->
+
+                <TextView
+                    android:id="@+id/txtSubjectsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المواد الدراسية"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_alignParentStart="true"
+                    android:shadowColor="#4FC3FF"
+                    android:shadowRadius="12"
+                    android:shadowDx="0"
+                    android:shadowDy="0"/>
+
+                <!-- الوصف -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtSubjectsTitle"
+                    android:layout_toStartOf="@id/circleSubjects"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="إدارة المواد والمحاضرات&#10;"
+                    android:textColor="#ECFFFA"
+                    android:textSize="15sp"
+                    android:maxLines="2"/>
+
+                <!-- السهم -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="ابدأ الآن  →"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- بطاقة المهام -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTasks"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_purple"
+                android:padding="24dp">
+
+                <!-- دائرة الأيقونة -->
+
+                <FrameLayout
+                    android:id="@+id/circleTasks"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bg_logo_circle">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="📝"
+                        android:textSize="34sp"/>
+
+                </FrameLayout>
+
+                <!-- عنوان البطاقة -->
+
+                <TextView
+                    android:id="@+id/txtTasksTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="المهام"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#FFFFFF"
+                    android:shadowColor="#4FC3FF"
+                    android:shadowRadius="12"
+                    android:shadowDx="0"
+                    android:shadowDy="0"/>
+
+                <!-- الوصف -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTasksTitle"
+                    android:layout_toStartOf="@id/circleTasks"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="تنظيم الواجبات&#10;"
+                    android:textColor="#F2EDFF"
+                    android:textSize="15sp"
+                    android:maxLines="2"/>
+
+                <!-- زر السهم -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ابدأ الآن"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="➜"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

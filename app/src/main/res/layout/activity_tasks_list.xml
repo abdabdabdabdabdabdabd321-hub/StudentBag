@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#070B14"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp">
+
+    <!-- زر الرجوع -->
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⬅  رجوع"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/button_rounded"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+
+    <!-- عنوان الصفحة -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="المهام المسجلة"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="جميع مهامك ومواعيدك الدراسية في مكان واحد"
+        android:textSize="14sp"
+        android:textColor="#8EA6C9"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:includeFontPadding="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp"/>
+
+    <!-- منطقة الجدول -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:background="#0A1220"
+        android:elevation="4dp"
+        android:padding="1dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#0A1220">
+
+                <!-- رأس الجدول -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="#11284A">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="النوع"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#63C7FF"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="المادة"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#63C7FF"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:text="التاريخ"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#63C7FF"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="الوقت"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#63C7FF"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:text="مدة الاستعداد"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFD85A"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="تعديل"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#62E6C2"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#35659A"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:text="حذف"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FF7E8B"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+                <!-- خط أسفل رأس الجدول -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#2B8CFF"/>
+
+                <!-- قائمة المهام -->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerTasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0A1220"
+                    android:clipToPadding="false"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="6dp"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp"/>
+
+    <!-- زر جدول الأعمال -->
+
+    <Button
+        android:id="@+id/btnSmartPlan"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="جدول الأعمال المرتبة"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/button_rounded"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+</LinearLayout>

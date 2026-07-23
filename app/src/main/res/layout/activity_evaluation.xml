@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#090E16"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingTop="18dp"
+    android:paddingBottom="18dp">
+
+    <!-- عنوان الصفحة -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊  تقييم الأداء"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ملخص إنجازك في جدول الأعمال"
+        android:textSize="14sp"
+        android:textColor="#91A8C5"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- البطاقة الرئيسية -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_big"
+        android:backgroundTint="#151D27"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:elevation="10dp">
+
+        <!-- نسبة الإنجاز -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نسبة الإنجاز"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="9dp"/>
+
+        <LinearLayout
+            android:id="@+id/cardPercent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_item"
+            android:backgroundTint="#223246"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/txtPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80%"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#55C7FF"
+                android:gravity="center"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="من إجمالي الأعمال"
+                android:textSize="13sp"
+                android:textColor="#A8BCD3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <!-- عدد الأعمال المنجزة -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عدد الأعمال المنجزة"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="9dp"/>
+
+        <LinearLayout
+            android:id="@+id/cardTasks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_item"
+            android:backgroundTint="#223246"
+            android:elevation="6dp"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/txtTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 من 15"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عمل تم إنجازه"
+                android:textSize="13sp"
+                android:textColor="#A8BCD3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+        <!-- التقييم -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="التقييم"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="9dp"/>
+
+        <LinearLayout
+            android:id="@+id/cardReport"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_item"
+            android:backgroundTint="#223246"
+            android:elevation="6dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txtReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جيد"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFD75A"
+                android:gravity="center"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="استمر في تحسين مستوى إنجازك"
+                android:textSize="13sp"
+                android:textColor="#A8BCD3"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginTop="7dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

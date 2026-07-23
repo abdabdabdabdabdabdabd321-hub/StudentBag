@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp"
+        android:background="@drawable/bg_login">
+
+        <!-- مساحة علوية -->
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <!-- دائرة الشعار -->
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_logo_circle"
+            android:foregroundGravity="center">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center"
+                android:src="@drawable/studentbag_logo"
+                android:scaleType="centerCrop"
+                android:contentDescription="شعار تطبيق حقيبة الطالب"/>
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <!-- اسم التطبيق -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StudentBag"
+            android:textStyle="bold"
+            android:textSize="38sp"
+            android:textColor="@android:color/white"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <!-- النص الترحيبي -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="2dp"
+                android:background="#3568FF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   مرحباً بك في حسابك   "
+                android:textSize="18sp"
+                android:textColor="#E0E0E0"/>
+
+            <View
+                android:layout_width="55dp"
+                android:layout_height="2dp"
+                android:background="#3568FF"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <!-- البريد الإلكتروني -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البريد الإلكتروني"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="example@email.com"
+            android:textColorHint="#BDBDBD"
+            android:textColor="#FFFFFF"
+            android:background="#1C2F5F"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:inputType="textEmailAddress"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+        <!-- كلمة المرور -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="كلمة المرور"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#1C2F5F"
+                android:paddingStart="18dp"
+                android:paddingEnd="58dp"
+                android:hint="********"
+                android:textColorHint="#BDBDBD"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"/>
+
+            <ImageButton
+                android:id="@+id/btnTogglePassword"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_view"
+                app:tint="#FFFFFF"
+                android:contentDescription="إظهار كلمة المرور"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="هل نسيت كلمة المرور؟"
+            android:textColor="#4FC3FF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+
+        <!-- زر تسجيل الدخول -->
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:text="تسجيل الدخول"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3D6BFF"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+        <!-- أو -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#506090"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   أو   "
+                android:textColor="#CFCFCF"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#506090"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+        <!-- تسجيل الدخول باستخدام Google -->
+
+        <Button
+            android:id="@+id/btnGoogleSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="الاستمرار باستخدام Google"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1A1A1A"
+            android:backgroundTint="#FFFFFF"
+            android:drawableStart="@drawable/ic_google"
+            android:drawablePadding="12dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <!-- إنشاء حساب -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="إنشاء حساب جديد"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#223A73"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
